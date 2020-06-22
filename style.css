@@ -4,22 +4,26 @@
 .zone{
     border: 1px solid red;
     width:300px;
+    height: 500px;
     margin:0 auto;
+    margin-top:200px;
 }
-.square1{
+
+
+.square_pink{
     margin:0 auto;
-    margin-top: 500px;
+    margin-top:200px;
     width:100px;
     height:100px;
     background-color: pink;
     position: relative;
     animation-iteration-count: 1;
     animation-name: pink_square1;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
-.zone:hover .square1{
+.zone:hover .square_pink{
     animation-play-state: paused;
     opacity: 0;
 }
@@ -36,5 +40,123 @@
     100%{
         bottom:200px;
         left:100px;
+        border-radius: 30%;
     }
+}
+
+
+.square_green{
+    margin:0 auto;
+    margin-top:-100px;
+    width:100px;
+    height:100px;
+    background-color: greenyellow;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: green_square1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.zone:hover .square_green{
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+
+@keyframes green_square1{
+    0%{
+        right:0;
+    }
+    50%{
+        border-radius: 50%;
+        right:100px;
+    }
+    100%{
+        bottom:200px;
+        right:100px;
+        border-radius: 30%;
+    }
+}
+
+.square_red{
+    margin:0 auto;
+    margin-top:-100px;
+    width:100px;
+    height:100px;
+    background-color: red;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: red_square1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.zone:hover .square_red{
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+
+@keyframes red_square1{
+    0%{
+        right:0;
+    }
+    50%{
+        border-radius: 50%;
+        right:100px;
+    }
+    100%{
+        top:200px;
+        right:100px;
+        border-radius: 30%;
+    }
+}
+
+.square_blue{
+    margin:0 auto;
+    margin-top:-100px;
+    width:100px;
+    height:100px;
+    background-color: blue;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: blue_square1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.zone:hover .square_blue{
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+
+@keyframes blue_square1{
+    0%{
+        left:0;
+    }
+    50%{
+        border-radius: 50%;
+        left:100px;
+    }
+    100%{
+        top:200px;
+        left:100px;
+        border-radius: 30%;
+    }
+}
+
+.square_black{
+    margin:0 auto;
+    margin-top:-100px;
+    width:100px;
+    height:100px;
+    background-color: black;
+    position: relative;
+    border-radius: 30%;
+}
+.zone:hover .square_black{
+    animation-play-state: paused;
+    opacity: 0;
 }
