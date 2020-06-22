@@ -1,12 +1,18 @@
 *{
     margin:0;
 }
+header{
+    display:flex;
+    justify-content: space-evenly;
+}
 .zone{
-    border: 1px solid red;
     width:300px;
-    height: 500px;
-    margin:0 auto;
+    height: 550px;
     margin-top:200px;
+}
+ p{
+    font-size: 25px;
+    text-align: center;
 }
 
 
@@ -17,7 +23,7 @@
     height:100px;
     background-color: pink;
     position: relative;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-name: pink_square1;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -32,10 +38,11 @@
 @keyframes pink_square1{
     0%{
         left:0;
+        bottom:0;
     }
     50%{
         border-radius: 50%;
-        left:100px;
+        bottom:100px;
     }
     100%{
         bottom:200px;
@@ -52,7 +59,7 @@
     height:100px;
     background-color: greenyellow;
     position: relative;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-name: green_square1;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -67,10 +74,11 @@
 @keyframes green_square1{
     0%{
         right:0;
+        bottom:0;
     }
     50%{
         border-radius: 50%;
-        right:100px;
+        bottom:100px;
     }
     100%{
         bottom:200px;
@@ -86,7 +94,7 @@
     height:100px;
     background-color: red;
     position: relative;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-name: red_square1;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -101,10 +109,11 @@
 @keyframes red_square1{
     0%{
         right:0;
+        top:0;
     }
     50%{
         border-radius: 50%;
-        right:100px;
+        top:100px;
     }
     100%{
         top:200px;
@@ -120,7 +129,7 @@
     height:100px;
     background-color: blue;
     position: relative;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-name: blue_square1;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -135,10 +144,11 @@
 @keyframes blue_square1{
     0%{
         left:0;
+        top:0;
     }
     50%{
         border-radius: 50%;
-        left:100px;
+        top:100px;
     }
     100%{
         top:200px;
@@ -159,4 +169,36 @@
 .zone:hover .square_black{
     animation-play-state: paused;
     opacity: 0;
+}
+
+
+.zone1{
+    border:3px inset red;
+    width:300px;
+    height: 250px;
+    margin-top:200px;
+    box-shadow: 1px 0 10px black;
+}
+.square_1{
+    background-color: hotpink;
+    width:100px;
+    height:100px;
+    transform: translate(150px,0px);
+    transition: all 1s ease 2s;
+}
+.square_2{
+    margin-left:45px;
+    display:flex;
+    justify-content: center;
+    background-color: hotpink;
+    width:100px;
+    height:100px;
+    align-items: center;
+    font-size:20px;
+    transition: all 1s ease 0s;
+    transform: skew(10deg);
+    box-shadow: 0 0 10px black;
+}
+.square_2:hover{
+    transform: rotate(180deg);
 }
