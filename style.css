@@ -1,0 +1,40 @@
+*{
+    margin:0;
+}
+.zone{
+    border: 1px solid red;
+    width:300px;
+    margin:0 auto;
+}
+.square1{
+    margin:0 auto;
+    margin-top: 500px;
+    width:100px;
+    height:100px;
+    background-color: pink;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: pink_square1;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.zone:hover .square1{
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+
+@keyframes pink_square1{
+    0%{
+        left:0;
+    }
+    50%{
+        border-radius: 50%;
+        left:100px;
+    }
+    100%{
+        bottom:200px;
+        left:100px;
+    }
+}
