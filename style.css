@@ -2,9 +2,176 @@
     margin:0;
 }
 header{
+    background: #4169E1;
+    height:500px;
+}
+main{
     display:flex;
     justify-content: space-evenly;
 }
+
+.shark{
+    margin:0 auto;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: black_shark;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes black_shark{
+    0%{
+        left:0;
+        top:0;
+    }
+    25%{
+        top:100px;
+        left:200px;
+    }
+    50%{
+        top:0px;
+        left:400px;
+    }
+    75%{
+        top:100px;
+        left:600px;
+    }
+    100%{
+        top:100px;
+        left:800px;
+    }
+}
+.fish1{
+    margin:0 auto;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish_1;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes  fish_1{
+    0%{
+        left:0;
+        top:0;
+    }
+    25%{
+        top:100px;
+        left:200px;
+    }
+    50%{
+        opacity: 1;
+        top:0px;
+        left:300px;
+    }
+    75%{
+        opacity: 0;
+        top:100px;
+        left:400px;
+    }
+    100%{
+        opacity: 0;
+        top:100px;
+        left:500px;
+    }
+}
+
+.fish2{
+    margin:0 auto;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish_2;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    left:1000px;
+}
+@keyframes  fish_2{
+    0%{
+        bottom:0;
+        top:0;
+    }
+    25%{
+        top:200px;
+    }
+    50%{
+        top:0px; 
+    }
+    75%{  
+        top:200px;   
+    }
+    100%{   
+        top:0px;   
+    }
+}
+
+.fish3{
+    position: relative;
+    left:900px;
+    top: 300px;
+    transform: translate(-1300px,0px);
+    transition: all 10s ease 5s;
+}
+.fish4{
+    position: relative;
+    left:-500px;
+    top: 100px;
+    transform: translate(0px,200px);
+    transition: all 12s ease 5s;
+}
+.fish6{
+    position: relative;
+    top: -100px;
+    transform: translate(0px,-30px);
+    transition: all 6s ease 5s;
+}
+.fish5{
+    margin:0 auto;
+    position: relative;
+    top:150px;
+    left:400px;
+    animation-iteration-count: 1;
+    animation-name: black_fish5;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes black_fish5{
+    0%{
+        top:150px;
+        left:0px;
+        
+    }
+    25%{
+        top:250px;
+        left:-200px;
+    }
+    50%{
+        top:100px;
+        left:-400px;
+    }
+    75%{
+        top:200px;
+        left:-600px;
+    }
+    100%{
+        top:100px;
+        left:-900px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .zone{
     width:300px;
     height: 550px;
@@ -14,8 +181,6 @@ header{
     font-size: 25px;
     text-align: center;
 }
-
-
 .square_pink{
     margin:0 auto;
     margin-top:200px;
