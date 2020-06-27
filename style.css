@@ -3,7 +3,7 @@
 }
 header{
     background: #4169E1;
-    height:500px;
+    height:1250px;
 }
 main{
     display:flex;
@@ -15,7 +15,7 @@ main{
     position: relative;
     animation-iteration-count: 1;
     animation-name: black_shark;
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
@@ -46,7 +46,7 @@ main{
     position: relative;
     animation-iteration-count: 1;
     animation-name: fish_1;
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
@@ -81,7 +81,7 @@ main{
     position: relative;
     animation-iteration-count: 1;
     animation-name: fish_2;
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
     left:1000px;
@@ -109,21 +109,14 @@ main{
     position: relative;
     left:900px;
     top: 300px;
-    transform: translate(-1300px,0px);
-    transition: all 10s ease 5s;
-}
-.fish4{
-    position: relative;
-    left:-500px;
-    top: 100px;
-    transform: translate(0px,200px);
-    transition: all 12s ease 5s;
+    transform: translate(-1500px,0px);
+    transition: all 50s ease 5s;
 }
 .fish6{
     position: relative;
     top: -100px;
     transform: translate(0px,-30px);
-    transition: all 6s ease 5s;
+    transition: all 40s ease 5s;
 }
 .fish5{
     margin:0 auto;
@@ -132,7 +125,7 @@ main{
     left:400px;
     animation-iteration-count: 1;
     animation-name: black_fish5;
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
@@ -161,209 +154,399 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.zone{
-    width:300px;
-    height: 550px;
-    margin-top:200px;
-}
- p{
-    font-size: 25px;
-    text-align: center;
-}
-.square_pink{
+.fish7{
     margin:0 auto;
-    margin-top:200px;
-    width:100px;
-    height:100px;
-    background-color: pink;
     position: relative;
-    animation-iteration-count: infinite;
-    animation-name: pink_square1;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    top: 500px;
+    right:1200px;
+    animation-iteration-count: 1;
+    animation-name: fish7;
+    animation-duration: 50s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
-.zone:hover .square_pink{
-    animation-play-state: paused;
-    opacity: 0;
-}
-
-
-@keyframes pink_square1{
+@keyframes fish7{
     0%{
-        left:0;
-        bottom:0;
+        right:1000px;
+        top:500px;
+    }
+    12.5%{
+        right:900px;
+        top:600px;
+    }
+    25%{
+        top:500px;
+        right:700px;
+    }
+    37.5%{
+        top:600px;
+        right:600px;
     }
     50%{
-        border-radius: 50%;
-        bottom:100px;
+        top:500px;
+        right:400px;
+    }
+    62.5%{
+        top:600px;
+        right:200px;
+    }
+    75%{
+        top:500px;
+        right:0px;
+    }
+    87.5%{
+        top:600px;
+        right:-100px;
     }
     100%{
-        bottom:200px;
+        top:500px;
+        right:-200px;
+    }
+}
+
+.fish8{
+    margin:0 auto;
+    position: relative;
+    top: 400px;
+    left:0px;
+    animation-iteration-count: 1;
+    animation-name: fish8;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish8{
+    0%{
         left:100px;
-        border-radius: 30%;
+        top:500px;
     }
-}
-
-
-.square_green{
-    margin:0 auto;
-    margin-top:-100px;
-    width:100px;
-    height:100px;
-    background-color: greenyellow;
-    position: relative;
-    animation-iteration-count: infinite;
-    animation-name: green_square1;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-.zone:hover .square_green{
-    animation-play-state: paused;
-    opacity: 0;
-}
-
-
-@keyframes green_square1{
-    0%{
-        right:0;
-        bottom:0;
+    12.5%{
+        left:200px;
+        top:600px;
+    }
+    25%{
+        top:600px;
+        left:300px;
+    }
+    37.5%{
+        top:600px;
+        left:400px;
     }
     50%{
-        border-radius: 50%;
-        bottom:100px;
+        transform: rotate(35deg);
+        top:500px;
+        right:400px;
+    }
+    62.5%{
+        top:600px;
+        right:200px;
+    }
+    75%{
+        top:500px;
+        right:0px;
+    }
+    87.5%{
+        top:600px;
+        right:-100px;
     }
     100%{
-        bottom:200px;
-        right:100px;
-        border-radius: 30%;
+        top:500px;
+        right:-200px;
     }
 }
 
-.square_red{
+.fish9{
     margin:0 auto;
-    margin-top:-100px;
-    width:100px;
-    height:100px;
-    background-color: red;
     position: relative;
-    animation-iteration-count: infinite;
-    animation-name: red_square1;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    top: 100px;
+    left:0px;
+    animation-iteration-count: 1;
+    animation-name: fish9;
+    animation-duration: 50s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
-.zone:hover .square_red{
-    animation-play-state: paused;
-    opacity: 0;
-}
-
-
-@keyframes red_square1{
+@keyframes fish9{
     0%{
-        right:0;
-        top:0;
-    }
-    50%{
-        border-radius: 50%;
+        left:100px;
         top:100px;
     }
-    100%{
-        top:200px;
-        right:100px;
-        border-radius: 30%;
+    12.5%{
+        left:200px;
+        top:300px;
     }
-}
-
-.square_blue{
-    margin:0 auto;
-    margin-top:-100px;
-    width:100px;
-    height:100px;
-    background-color: blue;
-    position: relative;
-    animation-iteration-count: infinite;
-    animation-name: blue_square1;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-.zone:hover .square_blue{
-    animation-play-state: paused;
-    opacity: 0;
-}
-
-
-@keyframes blue_square1{
-    0%{
-        left:0;
-        top:0;
+    25%{
+        top:100px;
+        left:400px;
+    }
+    37.5%{
+        top:200px;
+        left:500px;
     }
     50%{
-        border-radius: 50%;
+        transform: rotate(5deg);
         top:100px;
+        left:600px;
+    }
+    62.5%{
+        top:200px;
+        left:700px;
+    }
+    75%{
+        top:100px;
+        left:800px;
+    }
+    87.5%{
+        top:200px;
+        left:900px;
     }
     100%{
-        top:200px;
-        left:100px;
-        border-radius: 30%;
+        top:100px;
+        left:1100px;
     }
 }
 
-.square_black{
+.fish10{
     margin:0 auto;
-    margin-top:-100px;
-    width:100px;
-    height:100px;
-    background-color: black;
     position: relative;
-    border-radius: 30%;
+    top: 100px;
+    left:1000px;
+    animation-iteration-count: 1;
+    animation-name: fish10;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
-.zone:hover .square_black{
-    animation-play-state: paused;
-    opacity: 0;
+@keyframes fish10{
+    0%{
+        left:900px;
+        top:100px;
+    }
+    12.5%{
+        left:700px;
+        top:300px;
+    }
+    25%{
+        top:100px;
+        left:600px;
+    }
+    37.5%{
+        top:200px;
+        left:400px;
+    }
+    50%{
+        transform: rotate(5deg);
+        top:100px;
+        left:300px;
+    }
+    62.5%{
+        top:200px;
+        left:100px;
+    }
+    75%{
+        top:100px;
+        left:-100px;
+    }
+    87.5%{
+        top:200px;
+        left:-200px;
+    }
+    100%{
+        top:100px;
+        left:-300px;
+    }
+}
+
+.fish11{
+    margin:0 auto;
+    position: relative;
+    top: -300px;
+    left:0px;
+    animation-iteration-count: 1;
+    animation-name: fish11;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish11{
+    0%{
+        left:-30px;
+        top:-200px;
+    }
+    12.5%{
+        left:30px;
+        top:-100px;
+    }
+    25%{
+        opacity: 0.5;
+        top:0px;
+        left:-30px;
+    }
+    37.5%{
+        opacity: 1;
+        top:100px;
+        left:30px;
+    }
+    50%{
+        transform: rotate(20deg);
+        top:200px;
+        left:-30px;
+    }
+    62.5%{
+        transform: rotate(0deg);
+        top:300px;
+        left:30px;
+    }
+    75%{
+        transform: rotate(-20deg);
+        top:400px;
+        left:-30px;
+    }
+    87.5%{
+        transform: rotate(0deg);
+        top:500px;
+        left:30px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top:600px;
+        left:-30px;
+    }
+}
+
+.fish12{
+    margin:0 auto;
+    position: relative;
+    top: -300px;
+    left:-900px;
+    opacity: 0.5;
+    animation-iteration-count: 1;
+    animation-name: fish12;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish12{
+    0%{
+        opacity: 0.5;
+        left:-800px;
+        top:-200px;
+    }
+    12.5%{
+        left:-600px;
+        top:-100px;
+    }
+    25%{
+        top:0px;
+        left:-500px;
+    }
+    37.5%{
+        opacity: 0.5;
+        top:0px;
+        left:-400px;
+    }
+    50%{
+        transform: rotate(20deg);
+        opacity: 0.5;
+        top:100px;
+        left:-300px;
+    }
+    62.5%{
+        transform: rotate(0deg);
+        top:200px;
+        left:-200px;
+    }
+    75%{
+        transform: rotate(-20deg);
+        top:300px;
+        left:-100px;
+    }
+    87.5%{
+        transform: rotate(0deg);
+        top:400px;
+        left:0px;
+    }
+    100%{
+        opacity: 0.5;
+        transform: rotate(0deg);
+        top:500px;
+        left:100px;
+    }
+}
+
+.fish13{
+    margin:0 auto;
+    position: relative;
+    top:150px;
+    left:200px;
+    animation-iteration-count: 1;
+    animation-name: fish13;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish13{
+    0%{
+        top:150px;
+        left:200px;
+        
+    }
+    25%{
+        top:250px;
+        left:-200px;
+    }
+    50%{
+        top:100px;
+        left:-400px;
+    }
+    75%{
+        top:200px;
+        left:-600px;
+    }
+    100%{
+        top:100px;
+        left:-900px;
+    }
+}
+
+.fish_star{
+    margin:0 auto;
+    position: relative;
+    top:0px;
+    left:-800px;
+    animation-iteration-count: 1;
+    animation-name: fish_star;
+    animation-duration: 50s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish_star{
+    0%{
+       transform: rotate(25deg); 
+    }
+    25%{
+        transform: rotate(90deg); 
+    }
+    50%{
+        transform: rotate(180deg); 
+    }
+    75%{
+        transform: rotate(270deg); 
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
 }
 
 
-.zone1{
-    border:3px inset red;
-    width:300px;
-    height: 250px;
-    margin-top:200px;
-    box-shadow: 1px 0 10px black;
-}
-.square_1{
-    background-color: hotpink;
-    width:100px;
-    height:100px;
-    transform: translate(150px,0px);
-    transition: all 1s ease 2s;
-}
-.square_2{
-    margin-left:45px;
-    display:flex;
-    justify-content: center;
-    background-color: hotpink;
-    width:100px;
-    height:100px;
-    align-items: center;
-    font-size:20px;
-    transition: all 1s ease 0s;
-    transform: skew(10deg);
-    box-shadow: 0 0 10px black;
-}
-.square_2:hover{
-    transform: rotate(180deg);
-}
+
+
+
+
+
+
+
+
+
+
+
